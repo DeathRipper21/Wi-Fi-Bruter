@@ -6,7 +6,7 @@
 
 <p> Works with WPA2-Personal and WEP. <br>
 A simple Wi-Fi brute-force application written in Python.<br>
-Tested on Kali linux and Parrot OS, application uses nmcli to
+Tested on Kali linux and Parrot OS
 </p>
 <h2> Purpose of the tool </h2>
 <div>
