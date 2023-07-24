@@ -1,12 +1,21 @@
 # Wi-Fi-Bruter
-<h1>Disclaimer</h1>h1>
-<h1>The purpose of this application to be used for educational purposes only.</h1>
-<h1>Will not take any responsibility for any unethical and illegal activites/usage.</h1>
-<h1>Always ask for permission before you test an enviroment.</h1>
+<h1>Disclaimer</h1>
+<h2>The purpose of this application to be used for educational purposes only.</h1>
+<h2>Will not take any responsibility for any unethical and illegal activites/usage.</h2>
+<h2>Always ask for permission before you test an enviroment.</h2>
 
-
-
-Works with WPA2-Personal and WEP.
+<p> Works with WPA2-Personal and WEP. <br>
 A simple Wi-Fi brute-force application written in Python.
+</p>
+
+<h2> How To Use </h2> 
+<div>
+  <ul>
+    <li>Option 1: Scans for Wi-Fi and then rescans after 5 seconds </li>
+    <li>Option 2: Add the name of SSID and the file with the passwords you want to attack with.</li>
+    <li>Option 3: Exit </li>
+  </ul>
+</div>
+
 
 Enjoy
