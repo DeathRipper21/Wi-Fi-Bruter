@@ -2,7 +2,7 @@ import subprocess
 import time
 
 
-class Bruter:
+class Mauler:
     def __init__(self):
         self.debug = True
 
@@ -45,15 +45,15 @@ class Bruter:
 
 
 if __name__ == '__main__':
-    bruter = Bruter()
+    mauler = Mauler()
     print("""
-######                                    
-#     # #####  #    # ##### ###### #####  
-#     # #    # #    #   #   #      #    # 
-######  #    # #    #   #   #####  #    # 
-#     # #####  #    #   #   #      #####  
-#     # #   #  #    #   #   #      #   #  
-######  #    #  ####    #   ###### #    #
+#     #                                    
+##   ##   ##   #    # #      ###### #####  
+# # # #  #  #  #    # #      #      #    # 
+#  #  # #    # #    # #      #####  #    # 
+#     # ###### #    # #      #      #####  
+#     # #    # #    # #      #      #   #  
+#     # #    #  ####  ###### ###### #    # 
 
     1) Scan Wi-Fi
     2) Brute-Force Wi-Fi
@@ -63,15 +63,15 @@ if __name__ == '__main__':
         option = int(input("#>  "))
 
         if option == 1:
-           bruter.scan_wifi()
+           mauler.scan_wifi()
            time.sleep(10)
            print("Scanner will automatically scan after 10 seconds")
-           bruter.rescan_wifi()
+           mauler.rescan_wifi()
 
         if option == 2:
            ssid = str(input("Enter SSID/BSSID: "))
            password = input("Enter Wordlist Path: ") 
-           bruter.brute_force(ssid, password)
+           mauler.brute_force(ssid, password)
 
         if option == 3:
            exit() 
