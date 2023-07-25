@@ -1,4 +1,4 @@
-# Wi-Fi-Bruter
+# Wi-Fi-Mauler
 <h1>Disclaimer</h1>
 <h2>The purpose of this application to be used for educational purposes only.</h1>
 <h2>Will not take any responsibility for any unethical and illegal activites/usage.</h2>
@@ -32,6 +32,7 @@ Tested on Kali linux and Parrot OS
   <ul>
     <li>Add Make Access Point</li>
     <li>Add Deauthentication module</li>
+    <li>WPA3 attacks</li>
   </ul>
 </div>
 
