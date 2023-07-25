@@ -69,7 +69,7 @@ if __name__ == '__main__':
            bruter.rescan_wifi()
 
         if option == 2:
-           ssid = str(input("Enter SSID: "))
+           ssid = str(input("Enter SSID/BSSID: "))
            password = input("Enter Wordlist Path: ") 
            bruter.brute_force(ssid, password)
 
