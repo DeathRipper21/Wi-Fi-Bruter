@@ -30,7 +30,8 @@ Tested on Kali linux and Parrot OS
 <h2> Upcoming Changes </h2>
 <div>
   <ul>
-    <li>specify BSSID parameter</li>
+    <li>Add Make Access Point</li>
+    <li>Add Deauthentication module</li>
   </ul>
 </div>
 
