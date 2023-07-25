@@ -64,8 +64,8 @@ if __name__ == '__main__':
 
         if option == 1:
            bruter.scan_wifi()
-           time.sleep(5)
-           print("Scanner will automatically scan after 5 seconds")
+           time.sleep(10)
+           print("Scanner will automatically scan after 10 seconds")
            bruter.rescan_wifi()
 
         if option == 2:
